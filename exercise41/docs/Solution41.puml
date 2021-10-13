@@ -4,7 +4,6 @@
 class NameSorter {
     +names : ArrayList<String>
     +readFile() : ArrayList<String>
-    +sortNames(ArrayList<String>) : ArrayList<String>
     +printNames(ArrayList<String>)
 }
 
