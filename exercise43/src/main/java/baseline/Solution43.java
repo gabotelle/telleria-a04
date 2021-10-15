@@ -6,22 +6,17 @@ package baseline;
  */
 
 public class Solution43 {
-    /*
-    Prompt "Site Name:"
-        save into <siteName>
-    Prompt "Author:"
-        save into <author>
-    Prompt "Do you want a folder for JavaScript?"
-        save into <JSFolder>
-    Prompt "Do you want a folder for CSS?"
-        save into <CSSFolder>
-    Create website
-        create index.html
-            Set title <siteName>
-            Set meta author <author>
-            if JsFolder is true
-                Create JavaScript folder
-            if CSSFolder is true
-                Create CSS folder
-     */
+
+    public static void main(String[] args) {
+        WebSiteGenerator wg = new WebSiteGenerator();
+        wg.readInput();
+        wg.generateWebSite();
+        wg.generateHTML();
+        if(wg.getJSFolder()){
+            wg.generateJSFolder();
+        }
+        if(wg.getCSSFolder()){
+            wg.generateCSSFolder();
+        }
+    }
 }
