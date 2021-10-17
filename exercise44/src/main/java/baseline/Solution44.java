@@ -4,21 +4,9 @@ package baseline;
  *  Copyright 2021 first_name last_name
  */
 
-/*
-Product
-    -Name
-    -Price
-    -quantity
-Read the json file
-save into <products>
-Prompt user for name of product
-save into <productName>
-if <productName> inside <products>
-    Print "Name: <name>
-            Price: <price>
-            Quantity: <quantity>
-else
-    Prompt again
- */
 public class Solution44 {
+    public static void main(String[] args) {
+        ProductSearch ps = new ProductSearch();
+        ps.searchProduct();
+    }
 }
