@@ -73,7 +73,7 @@ public class WebSiteGenerator {
     //        Set meta author <author>
     public String generateHTML() {
         String htmlPath = path + "/index.html";
-        String websiteTitleAndAuthor = "<!DOCTYPE html>\n<html>\n<head><title> " + siteName + " </title>\n<meta name=\"author\" content=\"" + author + "\">\n</head>\n</html>";
+        String websiteTitleAndAuthor = "<!DOCTYPE html>\n<html>\n<head><title> " + siteName + " </title>\n<meta author =" + author + "\">\n</head>\n</html>";
         File html = new File(htmlPath);
         try {
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(html))) {
