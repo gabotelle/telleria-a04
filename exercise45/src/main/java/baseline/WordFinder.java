@@ -14,8 +14,8 @@ public class WordFinder {
 
     //Read file into <wordList>
     private void readFile()throws FileNotFoundException {
-        FileInputStream fileInput = new FileInputStream("./data/exercise45_input.txt");
-        Scanner sc = new Scanner(fileInput);
+        FileInputStream inputFile = new FileInputStream("./data/exercise45_input.txt");
+        Scanner sc = new Scanner(inputFile);
         while(sc.hasNextLine()){
             wordList.add(sc.nextLine());
         }

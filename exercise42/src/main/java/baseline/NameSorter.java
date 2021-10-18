@@ -18,7 +18,7 @@ public class NameSorter {
     //            Open file
     //                add to <employees> new Employee(inputFirst, inputLast, inputSalary)
     public void readFile() throws FileNotFoundException {
-        FileInputStream fileInput = new FileInputStream("./docs/exercise42_input.txt");
+        FileInputStream fileInput = new FileInputStream("./data/exercise42_input.txt");
         Scanner sc = new Scanner(fileInput);
         while(sc.hasNextLine()){
             String[] line = sc.nextLine().split(",");

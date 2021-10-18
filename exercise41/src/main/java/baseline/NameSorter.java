@@ -6,12 +6,13 @@ import java.io.FileOutputStream;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
 public class NameSorter {
-    private ArrayList<String> names = new ArrayList<>();
+    private final ArrayList<String> names = new ArrayList<>();
 
-    public ArrayList<String> getNames(){
+    public List<String> getNames(){
         return names;
     }
 

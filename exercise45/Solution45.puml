@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class WordFinder{
+    -wordFinder: ArrayList<String>
+    +getWordFinder(): ArrayList<String>
+    +readFile()
+    +replaceUtilizeWithUse()
+
+}
+@enduml

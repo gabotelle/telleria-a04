@@ -31,14 +31,6 @@ public class WebSiteGenerator {
         this.author = author;
     }
 
-    public void setJSFolder(boolean jsFolder) {
-        this.jsFolder = jsFolder;
-    }
-
-    public void setCssFolder(boolean cssFolder) {
-        this.cssFolder = cssFolder;
-    }
-
     //Prompt "Site Name:"
     //    save into <siteName>
     //Prompt "Author:"
@@ -95,7 +87,7 @@ public class WebSiteGenerator {
             created(jsPath);
             return jsPath;
         }
-        return jsPath;
+        return "js Not Created";
     }
 
     // if CSSFolder is true
@@ -106,7 +98,7 @@ public class WebSiteGenerator {
         if (newFolder.mkdirs()) {
             created(cssPath);
         }
-        return cssPath;
+        return "css not created";
     }
 
     private void created(String filePath){

@@ -17,7 +17,7 @@ class NameSorterTest {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        ArrayList<String> actual = nm.getNames();
+        ArrayList<String> actual = (ArrayList<String>)nm.getNames();
         ArrayList<String> expected = new ArrayList<>();
 
         expected.add("Ling, Mai");
@@ -41,7 +41,7 @@ class NameSorterTest {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        ArrayList<String> actual = nm.getNames();
+        ArrayList<String> actual = (ArrayList<String>) nm.getNames();
         ArrayList<String> expected = new ArrayList<>();
 
         expected.add("Johnson, Jim");

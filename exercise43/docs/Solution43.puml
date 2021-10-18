@@ -1,0 +1,21 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class WebSiteGenerator{
+    -input: Scanner
+    -siteName: String
+    -author: String
+    -path: String
+    -jsFolder: boolean
+    -cssFolder: boolean
+    +setSiteName()
+    +setAuthor()
+    +getJSFolder(): boolean
+    +getCSSFolder(): boolean
+    +generateWebsite(): String
+    +generateHTML(): String
+    +generateJSFolder(): String
+    +generateCSSFolder():String
+    -created()
+}
+@enduml
