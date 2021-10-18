@@ -1,0 +1,10 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class WordFinder{
+    -wordList(): ArrayList<String>
+    -getWordList(): ArrayList<String>
+    +replaceUtilizeWithUse()
+}
+
+@enduml
