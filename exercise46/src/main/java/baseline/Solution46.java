@@ -4,19 +4,17 @@ package baseline;
  *  Copyright 2021 Gabriel Telleria
  */
 
+import java.io.FileNotFoundException;
+
 public class Solution46 {
-    /*
-    Read the file
-        if <input> is not in <words>
-            add <input> to words with value 1
-        else
-            add 1 to the value of <input> in <words>
-    Print frequency
-        until <words> is empty
-            find most frequent
-                print "<word>"
-                    for <word> value
-                        print "*"
-            remove <word>
-     */
+    public static void main(String[] args) {
+        WordFrequencyFinder wff = new WordFrequencyFinder();
+        try {
+            wff.readFile();
+            wff.printFrequency();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+    }
 }
